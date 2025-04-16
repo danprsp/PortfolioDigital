@@ -1,148 +1,142 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio: Daniel Piloto</title>
-    <style>
-        /* Estilos básicos (você pode adicionar um arquivo CSS externo) */
-        body {
-            font-family: sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-        }
-        .hero {
-            background-color: #ddd;
-            padding: 50px;
-            text-align: center;
-        }
-        .hero h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
-        .section {
-            padding: 40px 20px;
-            max-width: 960px;
-            margin: 0 auto;
-        }
-        .section h2 {
-            font-size: 2em;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-        .project-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-        }
-        .project-item {
-            background-color: #fff;
-            padding: 15px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        .contact-form {
-            display: flex;
-            flex-direction: column;
-            max-width: 500px;
-            margin: 20px auto;
-        }
-        .contact-form label {
-            margin-bottom: 5px;
-        }
-        .contact-form input,
-        .contact-form textarea {
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        .contact-form button {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 15px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home - Daniel Piloto</title>
 </head>
 <body>
-
+  <div class="wrapper">
     <header>
-        <h1>Meu Portfólio</h1>
-        <nav>
-            <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
+      <h1>Meu Portfólio</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
     </header>
 
     <section class="hero">
-        <h1>Olá, eu sou Daniel Piloto!</h1>
-        <p>Um Desenvolvedor apaixonado por Tecnologia e Inovação..</p>
-        </section>
+      <h1>Olá, eu sou Daniel Piloto!</h1>
+      <p>Desenvolvedor, Procuro soluções e Desenvolvimento inteligente para problemas complexo.</p>
+    </section>
 
-    <section id="sobre" class="section">
-        <h2>Sobre Mim</h2>
-        <p>Desde pequeno sonhava em criar invenções e inovar com inovações cada vez mais inovadoras</p>
-        <ul>
-            <li>Python, Yolo, Threads, Flask, Pandas. e Varias Tecnologias, Sempre com sede de apreender</li>
-            <li>Liderança, Comunicação e Proatividade</li>
-            <li>Ingles e Portugues Fluente</li>
-            </ul>
-        </section>
+    <section class="section">
+      <h2>Meus Projetos</h2>
+      <div class="project-grid">
+        <a class="project-item" href="https://github.com/BugBustersFatecSJC/inv.sort">
+          <h3>InvSort: Gerenciador de Estoque</h3>
+          <p>Trabalhei no desenvolvimento do Inv.Sort, uma aplicação de gerenciamento de estoque usando TypeScript e Node.js. Contribuí com a criação da tela de login e o gerenciamento de queries MySQL. O Inv.Sort oferece uma gestão prática e inteligente do inventário, incluindo análise de tendências, cadastro de produtos e controle de entradas e saídas.</p>
+        </a>
+        <a class="project-item" href="https://github.com/CyberScrums/Projeto-Smart-Farming">
+          <h3>Projeto Smart Farming</h3>
+          <p>Contribuí com a criação de sistemas de raspagem de dados, automatizando a captura e o processamento das informações dos sensores. Também desenvolvi a interface principal do site, focada em facilitar a visualização dos dados através de gráficos, melhorando a eficiência e compreensão no monitoramento do Smart Farming.</p>
+        </a>
+        <a class="project-item" href="https://github.com/Kernel-Panic-FatecSjc/KernelPanic">
+          <h3>API KernelPanic</h3>
+          <p>Este projeto tem como objetivo desenvolver uma API para análise de dados das exportações e importações do estado de São Paulo. A solução permitirá a extração e visualização de informações estratégicas sobre os produtos exportados, destinos e tendências históricas. Como Scrum Master, sou responsável por organizar as reuniões diárias, remover impedimentos, facilitar a comunicação da equipe e garantir as práticas do Scrum. Também participo no desenvolvimento com Flask para criação de endpoints.</p>
+        </a>
+        <a class="project-item" href="https://www.omega7systems.com/en/home-en/">
+          <h3>Desenvolvedor de Automação e IA</h3>
+          <p>Sou especialista em IA e Visão Computacional para automação de processos industriais. Utilizo Deep Learning, Python, Yolo e diversas bibliotecas para desenvolver software em sistemas embarcados, aplicando tecnologias avançadas para otimizar e automatizar processos.</p>
+        </a>
+      </div>
+    </section>
+  </div>
 
-    <section id="projetos" class="section">
-        <h2>Meus Projetos</h2>
-        <div class="project-grid">
-            <div class="project-item">
-                <h3>InvSort:Gerenciador de Estoque</h3>
-                <p>Breve descrição do Projeto
-    
-                <div class="project-item">
-            <h3>Projeto-Smart-Farming</h3>
-            <p>Breve descrição do Projeto   
-                
-                <div class="project-item">
-            <h3>Dados Exportação e Importação: 1°Semestre</h3>
-            <p>Breve descrição do Projeto
-                <div class="project-item">
-            <h3>Desenvolvimento de Projetos com Visão Computacionasl e DeepLearning na Empresa Omega7Systems</h3>
-            <p>Breve descrição do Projeto   
-                
-                
+  <footer>
+    <p>&copy; 2025 Daniel Piloto</p>
+  </footer>
 
-                
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: sans-serif;
+      background-color: #2A2A3C;
+      color: #EAEAEA;
+    }
+    .wrapper {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background-color: #1A1A2E;
+      color: #F6C300;
+      padding: 20px;
+      text-align: center;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0 0;
+    }
+    nav ul li {
+      display: inline;
+      margin: 0 10px;
+    }
+    nav a {
+      color: #F6C300;
+      text-decoration: none;
+    }
+    nav a:hover {
+      color: #9A73D7;
+    }
+    .hero {
+      background-color: #1A1A3A;
+      padding: 50px;
+      text-align: center;
+    }
+    .hero h1, .hero p {
+      color: #EAEAEA;
+    }
+    .section {
+      padding: 40px 20px;
+      max-width: 960px;
+      margin: auto;
+      background-color: #2A2A3C;
+    }
+    .section h2 {
+      color: #F6C300;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .project-item {
+      background-color: #3A3A4D;
+      padding: 20px;
+      border-radius: 6px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      text-decoration: none;
+      color: #EAEAEA;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+    .project-item h3 {
+      margin-top: 0;
+      color: #F6C300;
+    }
+    .project-item:hover {
+      background-color: #4A4A5D;
+      transform: translateY(-4px);
+    }
+    footer {
+      margin-top: auto;
+      background-color: #1A1A2E;
+      color: #F6C300;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</body>
+</html>
